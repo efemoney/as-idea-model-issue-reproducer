@@ -14,3 +14,8 @@ class MainActivity : AppCompatActivity() {
     }
   }
 }
+
+sealed interface Sealed {
+  data class A(val b: String) : Sealed
+  object B : Sealed
+}
